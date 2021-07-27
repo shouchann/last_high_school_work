@@ -22,7 +22,7 @@
     <title>Sho.Studio</title>
 </head>
 <header>
-    <div class="title">
+    <div class="title pc-title">
         <h1>Shochan.Studio</h1>
         <p>&copy; 2021 Shouichi Shikita</p>
     </div>
@@ -30,12 +30,22 @@
         <a href="#about"><li class="item">About</li></a>
         <a href="#work"><li class="item">Work</li></a>
         <a href="#contact"><li class="item">Contact</li></a>
-    </ul>   
+    </ul>
+    <div class="phone-title">
+        <div class="title">
+            <h1>Shochan.Studio</h1>
+            <p>&copy; 2021 Shouichi Shikita</p>
+            <div class="sns">
+                <a class="sns" href="https://twitter.com/honntonemui"><i class="fab fa-twitter fa-4x phone"></i></a>
+                <a class="sns" href="https://www.instagram.com/shochan_shikky/"><i class="fab fa-instagram fa-4x phone"></i></a>
+            </div>
+        </div>
+    </div>   
 </header>
 <body>
-    <div class="sns">
-        <a class="sns" href="https://twitter.com/honntonemui"><i class="fab fa-twitter fa-4x"></i></a>
-        <a class="sns" href="https://www.instagram.com/shochan_shikky/"><i class="fab fa-instagram fa-4x"></i></a>
+    <div class="sns pc-sns">
+        <a class="sns" href="https://twitter.com/honntonemui"><i class="fab fa-twitter fa-4x phone"></i></a>
+        <a class="sns" href="https://www.instagram.com/shochan_shikky/"><i class="fab fa-instagram fa-4x phone"></i></a>
     </div>
     <div class="about" id="about">
         <div class="absolute">
@@ -147,12 +157,14 @@
     </div>
     <script src="./scrollreveal.min.js"></script>
     <script>
-       ScrollReveal().reveal('.flex', { 
-            duration: 1600, 
-            origin: 'left', 
-            distance: '50px',
-            reset: false   
-        });
+        if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+            ScrollReveal().reveal('.flex',{
+                duration: 1600, 
+                origin: 'left', 
+                distance: '50px',
+                reset: false
+            });
+        }
     </script>
 
     <script type="text/javascript">
@@ -165,12 +177,4 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./slider.js"></script>
 </body>
-<script>
-    ScrollReveal().reveal('footer', { 
-         duration: 1600, 
-         origin: 'bottom', 
-         distance: '100px',
-         reset: false   
-     });
- </script>
 </html>
