@@ -145,6 +145,7 @@ body,html{
     }
     .flex p{
         color: #202020;
+        margin-bottom: 1em;
     }
     .Bot{
         margin-top: 10em;
@@ -161,7 +162,7 @@ body,html{
     img.slack_img{
         width: 30%;
         height: auto;
-        margin: 0;
+ 
     }
     p.scroll{
         display: inline-block;
