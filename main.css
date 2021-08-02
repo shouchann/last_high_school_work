@@ -255,14 +255,16 @@ body,html{
         width: 40%;
         height: auto;
     }
-    img.slack_img{
+    .slack_img{
         display: block;
-        margin: 0 auto;
         width: 50%;
         height: auto;
     }
-    .slack_img{
-        margin: 0 auto;
+    #img1,#img3{
+        margin: 0px 0px auto 1em;
+    }
+    #img2{
+        margin: 0px 1em 0px auto;
     }
     br{
         display: none;
